@@ -1,3 +1,49 @@
+## LAB-23
+
+## Project: home-djangox
+
+**Author: Noor Alkhateeb**
+
+
+**Run:**
+
+> python3 manage.py runserver
+
+
+**update the database:**
+python manage.py makemigrations
+python manage.py migrate
+
+**project picture**
+
+1. home list
+
+![](./img/list.PNG)
+
+2. add home page
+
+![](./img/add.PNG)
+
+3. detail home page
+
+![](./img/datail.PNG)
+
+4. update home page
+
+![](./img/update.PNG)
+
+5. delete home page
+
+![](./img/delete.PNG)
+
+
+
+
+
+
+
+
+
 > A batteries-included Django starter project. To learn more try the books [Django for Beginners](https://djangoforbeginners.com), [Django for APIs](https://djangoforapis.com), and [Django for Professionals](https://djangoforprofessionals.com).
 
 ## 🚀 Features
