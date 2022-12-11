@@ -1,0 +1,19 @@
+{% extends '_base.html' %}
+
+
+
+{% block content %}
+
+    <h1>home detail</h1>
+<div id=card>
+    <h3 id="cardname" > {{home.position}} </h3>
+    <img src="{{home.img_url}}" alt="{{home.name}}" id="img" />
+    <h3 id="cardname">{{home.description}} </h3>
+    <h3 id="cardname">Owner: {{home.owner}} </h3>
+    <h3 id="cardname">Num. of rooms: {{home.rooms}} </h3>
+    <button type="button" id="Buttons"><a href="{% url 'home_list' %}">Home list</a></button>
+<div/>
+
+    
+
+{% endblock content %}

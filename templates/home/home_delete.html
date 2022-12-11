@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+
+
+
+{% block content %}
+
+    
+    
+    <form method = 'post' class="uniForm">
+        {% csrf_token %}
+        {{form.as_p}}  
+        <h1>are you sure you want to Delete {{home.position}} home</h1>
+        <input type='submit' value='yes' />
+    </form>
+
+{% endblock content %}

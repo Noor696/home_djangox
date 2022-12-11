@@ -1,0 +1,21 @@
+{% extends '_base.html' %}
+
+
+
+{% block content %}
+
+<a href="{% url 'home_create' %}">New Home</a>
+<ul>
+    {% for home in AllHomes %}
+    <div id="homecard">
+        <h3 id="cardname"> {{home.position}} </h3>
+        <button type="button" id="Buttons"><a href="{% url 'home_detail' home.pk %}">Home detail</a></button>
+        <button type="button" id="Buttons"><a href="{% url 'home_update' home.pk %}">Update</a></button>
+        <button type="button" id="Buttons"><a href="{% url 'home_delete' home.pk %}">Delete</a></button>
+        <img src="{{home.img_url}}"  id="img" />
+    </div>
+    {% endfor %}
+<ul/>
+
+
+{% endblock content %}

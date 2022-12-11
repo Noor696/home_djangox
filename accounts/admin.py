@@ -10,5 +10,7 @@ class CustomUserAdmin(UserAdmin):
     form = CustomUserChangeForm
     model = CustomUser
     list_display = ['email', 'username',]
+    # I would to add extra filed and show it in admin bage
+    fieldsets = UserAdmin.fieldsets + (('Contact information',{'fields':('phone_number',)}),)
 
 admin.site.register(CustomUser, CustomUserAdmin)
